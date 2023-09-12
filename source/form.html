@@ -35,37 +35,51 @@
   <section class="form">
     <div class="form__wrapper">
       <form class="form__table program" action="index.html" method="post">
-        <h1 class="program__title">Подбор программы</h1>
-        <p class="program__description">
-          Заполните анкету, и мы подберем<br>
-          программу питания для вашего кота
-        </p>
-        <fieldset class="program__field cat-info">
-          <label class="cat-info__name text-name" for="name">ИМЯ:*</label>
-          <input class="cat-info__entry" type="text" id="name" name="cat_info" placeholder="БАРСИК" required>
-          <label class="cat-info__name text-name" for="weight">ВЕС (КГ):*</label>
-          <input class="cat-info__entry" type="text" id="weight" name="cat_info" placeholder="7" required>
-          <label class="cat-info__name text-name" for="age">ВОЗРАСТ (ЛЕТ):</label>
-          <input class="cat-info__entry" type="text" id="age" name="cat_info" placeholder="7">
-        </fieldset>
-        <fieldset class="program__filed wishes">
-          <input class="wishes__entry" type="radio" checked id="loss" value="weight_loss" name="wish">
-          <label class="wishes__name click-name" for="loss">Похудение</label>
-          <input class="wishes__entry" type="radio" id="gain" value="weight_gain" name="wish">
-          <label class="wishes__name click-name" for="gain">Набор массы</label>
-          <input class="wishes__entry" type="radio" id="advice" value="weight_advice" name="wish">
-          <label class="wishes__name click-name" for="advice">Не знаю (нужен ваш совет)</label>
-        </fieldset>
+        <div class="program__info">
+          <h1 class="program__title">Подбор программы</h1>
+          <p class="program__description">
+            Заполните анкету, и мы подберем<br>
+            программу питания для вашего кота
+          </p>
+        </div>
+
+        <div class="program__cat-info-wrapper">
+          <fieldset class="program__field cat-info">
+            <label class="cat-info__name text-name" for="name">ИМЯ:*</label>
+            <input class="cat-info__entry" type="text" id="name" name="cat_info" placeholder="БАРСИК" required>
+            <label class="cat-info__name text-name" for="weight">ВЕС (КГ):*</label>
+            <input class="cat-info__entry" type="text" id="weight" name="cat_info" placeholder="7" required>
+            <label class="cat-info__name text-name" for="age">ВОЗРАСТ (ЛЕТ):</label>
+            <input class="cat-info__entry" type="text" id="age" name="cat_info" placeholder="7">
+          </fieldset>
+          <fieldset class="program__filed wishes">
+            <div class="wishes__wrapper">
+              <input class="wishes__entry" type="radio" checked id="loss" value="weight_loss" name="wish">
+              <label class="wishes__name click-name" for="loss">Похудение</label>
+            </div>
+            <div class="wishes__wrapper">
+              <input class="wishes__entry" type="radio" id="gain" value="weight_gain" name="wish">
+              <label class="wishes__name click-name" for="gain">Набор массы</label>
+            </div>
+            <div class="wishes__wrapper">
+              <input class="wishes__entry" type="radio" id="advice" value="weight_advice" name="wish">
+              <label class="wishes__name click-name" for="advice">Не знаю (нужен ваш совет)</label>
+            </div>
+            </fieldset>
+        </div>
+
         <fieldset class="program__field owner">
-          <legend class="owner__title field-legend">Контактные данные (владельца кота)</legend>
-          <label class="owner__name text-name" for="email">E-mail:*</label>
-          <input class="owner__entry" type="email" id="email" name="owner_info" placeholder="кuklachev@gmail.com" required>
-          <label class="owner__name text-name" for="tel">Телефон:*</label>
-          <input class="owner__entry" type="tel" name="owner_info" id="tel" placeholder="8 (960) 900-60-90" required>
-        </fieldset>
+          <legend class="owner__title">Контактные данные (владельца кота)</legend>
+          <div class="owner__wrapper">
+            <label class="owner__name text-name" for="email">E-mail:*</label>
+            <input class="owner__entry-email" type="email" id="email" name="owner_info" placeholder="кuklachev@gmail.com" required>
+            <label class="owner__name text-name" for="tel">Телефон:*</label>
+            <input class="owner__entry-tel" type="tel" name="owner_info" id="tel" placeholder="8 (960) 900-60-90" required>
+          </div>
+          </fieldset>
         <fieldset class="program__field comment-field">
-          <legend class="comment-field__title field-legend">Комментарий</legend>
-          <textarea class="comment-field__entry" name="comment" id="about_cat" rows="5" cols="200"
+          <legend class="comment-field__title">Комментарий</legend>
+          <textarea class="comment-field__entry" name="comment" id="about_cat" rows="5" cols="155"
                     placeholder="Расскажите обо всех поводках кота"></textarea>
         </fieldset>
         <fieldset class="program__field extra-field">
