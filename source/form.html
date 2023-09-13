@@ -84,18 +84,22 @@
         </fieldset>
         <fieldset class="program__field extra-field">
           <legend class="extra-field__title">Дополнительно</legend>
-          <label class="extra-field__name click-name" for="sweetener">Сахарозаменитель</label>
-          <input class="extra-field__entry" type="checkbox" checked name="extra" id="sweetener">
-          <label class="extra-field__name click-name" for="water">Питьевая вода</label>
-          <input class="extra-field__entry" type="checkbox" name="extra" id="water">
-          <label class="extra-field__name click-name" for="milk">Молоко</label>
-          <input class="extra-field__entry" type="checkbox" name="extra" id="milk">
-          <label class="extra-field__name click-name" for="vitamins">Витамины</label>
-          <input class="extra-field__entry" type="checkbox" name="extra" id="vitamins">
+          <div class="extra-field__wrapper">
+            <input class="extra-field__entry" type="checkbox" checked name="extra" id="sweetener">
+            <label class="extra-field__name click-name" for="sweetener">Сахарозаменитель</label>
+            <input class="extra-field__entry" type="checkbox" name="extra" id="water">
+            <label class="extra-field__name click-name" for="water">Питьевая вода</label>
+            <input class="extra-field__entry" type="checkbox" name="extra" id="milk">
+            <label class="extra-field__name click-name" for="milk">Молоко</label>
+            <input class="extra-field__entry" type="checkbox" name="extra" id="vitamins">
+            <label class="extra-field__name click-name" for="vitamins">Витамины</label>
+          </div>
         </fieldset>
-        <button class="program__button button" type="submit">Отправить заявку</button>
-        <p class="program__description">* - Обязательные поля</p>
-      </form>
+        <div class="program__button-wrapper">
+          <button class="program__button button" type="submit">Отправить заявку</button>
+          <p class="program__required">* - Обязательные поля</p>
+        </div>
+       </form>
     </div>
   </section>
 </main>
