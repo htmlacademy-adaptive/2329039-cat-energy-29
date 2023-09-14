@@ -7,6 +7,11 @@
   <title>Cat-Energy</title>
 </head>
 <body class="page-body">
+<div class="page-body__background">
+  <div class="page-body__background-image">
+    <div class="page-body__background-layer"></div>
+  </div>
+</div>
 <header class="main-header">
   <a class="main-header__logo" href="/">
     <img class="main-header__logo-image" src="img/header-logo.svg" width="70" height="59" alt="Логотип Cat Energy">
@@ -18,13 +23,13 @@
     </button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--current">
+        <li class="site-list__item site-list__item--main-current">
           <a href="index.html">Главная</a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--main">
           <a href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--main">
           <a href="form.html">Подбор программы</a>
         </li>
       </ul>
@@ -51,7 +56,12 @@
           <p class="choice__description">Ваш кот весит больше собаки и почти утратил способность<br>
             лазить по деревьям? Пора на диету! Cat Energy Slim поможет<br>
             вашему питомцу сбросить лишний вес.</p>
-          <a href="catalog.html" class="choice__button">Каталог Slim</a>
+          <a href="catalog.html" class="choice__button">Каталог Slim
+            <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
+              <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+            </svg>
+          </a>
         </li>
         <li class="option__item choice">
           <h3 class="choice__title">Набор массы</h3>
@@ -59,7 +69,12 @@
           <p class="choice__description">Заработать авторитет среди дворовых котов и даже собак?<br>
             Серия Cat Energy Pro поможет вашему коту нарастить<br>
             необходимые мышцы!</p>
-          <a href="catalog.html" class="choice__button">Каталог Pro</a>
+          <a href="catalog.html" class="choice__button">Каталог Pro
+            <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
+              <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+            </svg>
+          </a>
         </li>
       </ul>
     </div>
@@ -154,13 +169,13 @@
           <div class="map__invite invite">
             <h3 class="invite__title">Приглашаем к сотрудничеству дилеров!</h3>
             <div class="invite__wrapper">
-              <address class="invite__home">
+              <p class="invite__home">
                 ул. Большая
                 Конюшенная, д. 19/8
-              </address>
-              <address class="invite__town">
+              </p>
+              <p class="invite__town">
                 Санкт-Петербург
-              </address>
+              </p>
             </div>
 
           </div>
